@@ -1,1 +1,1 @@
-# RachunekPrawdopodobienstwa
+# c++
