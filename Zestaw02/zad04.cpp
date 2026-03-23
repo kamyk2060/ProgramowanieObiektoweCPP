@@ -26,7 +26,7 @@ int main() {
     for (int x : v) cout << x << " ";
     cout << "\n";
 
-    vector<int>::iterator it = find_if(v.begin(), v.end(), bind2nd(greater<int>(), 4));
+    vector<int>::iterator it = find_if(v.begin(), v.end(), bind(greater<int>(), placeholders::_1, 4));
     if (it != v.end())
         cout << "Int pierwszy wiekszy od 4: " << *it << "\n";
 
